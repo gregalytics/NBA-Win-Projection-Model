@@ -61,9 +61,3 @@ away_games <- games %>%
 
 matchups <- home_games %>% 
   inner_join(away_games) 
-
-teams <- home_games %>% 
-  select(home_team) %>% 
-  rename(team = home_team) %>% 
-  distinct() %>% 
-  mutate(elo = 1500)
