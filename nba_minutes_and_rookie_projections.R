@@ -6,9 +6,6 @@
 ## frequently, and the back end of the team's bench is getting more minutes. I think this will be helpful in allocating
 ## playing time since there is 
 
-
-## I can use ordinal regression to try and estimate the team's opening night rotation from 1-14. 
-
 minutes_rankings <- per_game_stats %>% 
   mutate(total_min = g * mp) %>% 
   filter(g > 10) %>% 
